@@ -3,16 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import mauerSWLogo from './images/mauerSW-Logo.png'
+
 function PageNav() {
   return (
     <Navbar bg="primary"  variant='dark' expand="lg" >
       <Container style={{margin:"0"}}>
         <Navbar.Brand href="/" sytle={{padding:"0"}}>
           <img
-            src="./mauerSW-Logo.png"
+            src={mauerSWLogo}
             width="100"
             height="100"
             className="d-inline-block align-top"
+            alt="MauerSWLogo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

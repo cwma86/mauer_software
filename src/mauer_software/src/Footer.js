@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import mauerSWLogo from './images/mauerSW-Logo.png'
 
 const Footer = () => {
 return (
@@ -10,10 +11,7 @@ return (
         <Container>
             <Row>
                 <Col>
-                    <a href="/index.html"/>
-                    <a>
-                        <img src="mauerSW-Logo.png" width="85" height="75" alt=""/>
-                    </a>
+                    <img src={mauerSWLogo} width="85" height="75" alt=""/>
                 </Col>
                 <Col>
                 <p>Mauer Software Development Blog</p>
@@ -49,7 +47,7 @@ return (
             </Row>
             <Row>
              <br/>
-                <div class="copyright">&copy; Mauer Software: <a href="#">HTML Design</a>.</div>
+                <div class="copyright">&copy; Mauer Software: <a href="/home">HTML Design</a>.</div>
 
             </Row>
         </Container>

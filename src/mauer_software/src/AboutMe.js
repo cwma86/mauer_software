@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import meWithMustache from './images/MeWithMustache.jpg'
 const AboutMe = () => {
 return (
 	<div style={{margin:"20px"}}>
@@ -9,7 +10,7 @@ return (
 				<Col/>
 				<Col>
 					<img 
-						src="./MeWithMustache.jpg" 
+						src={meWithMustache} 
 						width="200"
 						height="200"
 						alt="Me" 
