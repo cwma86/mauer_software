@@ -3,18 +3,19 @@ frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     preBuild:
-      - ls
-      - cd ./src/mauer_software
-      - ls
-      - npm --version
-      - npm install
+      commands:
+        - ls
+        - cd ./src/mauer_software
+        - ls
+        - npm --version
+        - npm install
     build:
       commands:
         - ls 
-        - npm start
+        - npm run build
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: ./
+    baseDirectory: ./build/
     files:
       - '**/*'
   cache:
