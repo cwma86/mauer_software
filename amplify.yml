@@ -6,14 +6,15 @@ frontend:
       - ls && pwd
       - cd ./src/mauer_software
       - ls && pwd
-      - yarn install
+      - npm --version
+      - npm install
     build:
       commands:
         - ls && pwd
-        - yarn run build
+        - npm start
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: build
+    baseDirectory: ./
     files:
       - '**/*'
   cache:
