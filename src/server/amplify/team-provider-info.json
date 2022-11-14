@@ -15,7 +15,7 @@
       "function": {
         "messagefunction": {
           "deploymentBucketName": "amplify-server-dev-202435-deployment",
-          "s3Key": "amplify-builds/messagefunction-483853646d556c325430-build.zip"
+          "s3Key": "amplify-builds/messagefunction-486c374a4a4357347570-build.zip"
         }
       },
       "api": {
