@@ -3,14 +3,14 @@ frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     preBuild:
-      - ls && pwd
+      - ls
       - cd ./src/mauer_software
-      - ls && pwd
+      - ls
       - npm --version
       - npm install
     build:
       commands:
-        - ls && pwd
+        - ls 
         - npm start
   artifacts:
     # IMPORTANT - Please verify your build output directory
