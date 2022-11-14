@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Home = () => {
-return (
+
+    const [message, setMessage] = useState("");
+
+    useEffect(() => {
+      fetch("http://localhost:8000/message")
+        .then((res) => res.json())
+        .then((data) => setMessage(data.message));
+    }, []);
+
+    return (
     <>
         <Col xs="2">tool bar</Col>
-        <Col>contents</Col>
+        <Col>{message}</Col>
     </>
 );
 };
