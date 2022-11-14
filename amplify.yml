@@ -1,23 +1,4 @@
 version: 1
-
-backend:
-  phases:
-    preBuild:
-      commands:
-        - ls 
-        - pwd
-        - cd ./src/server
-        - npm install
-    build:
-      commands:
-        - ls
-        - pwd
-    postBuild:
-        commands:
-        - ls
-        - pwd 
-        - npm start
-
 frontend:
   phases:
     # IMPORTANT - Please verify your build commands
