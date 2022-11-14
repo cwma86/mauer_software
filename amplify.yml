@@ -13,6 +13,8 @@ frontend:
       commands:
         - ls 
         - npm run build
+        - ls
+        - pwd
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: ./build/
