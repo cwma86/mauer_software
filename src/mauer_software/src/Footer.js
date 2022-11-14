@@ -21,12 +21,12 @@ return (
                         <Col xs={10}/>
                         <Col>
                             <a href="https://www.facebook.com/corymauer" data-toggle="tooltip" data-placement="bottom" title="Facebook">
-                                <i class="fa fa-facebook"/>
+                                <i className="fa fa-facebook"/>
                             </a>
                         </Col>
                         <Col>
                             <a href="https://www.linkedin.com/in/corymauer/" data-toggle="tooltip" data-placement="bottom" title="Linkdin">
-                                <i class="fa fa-linkedin"/>
+                                <i className="fa fa-linkedin"/>
                             </a>
                         </Col>
                     </Row>
@@ -35,10 +35,10 @@ return (
             <Row>
                 <Col></Col>
                 <Col>
-                    <div class="newsletter-widget text-left">
-                    <form class="form-inline">
-                        <input type="text" class="form-control" placeholder="Enter your email address"/>
-                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    <div className="newsletter-widget text-left">
+                    <form className="form-inline">
+                        <input type="text" className="form-control" placeholder="Enter your email address"/>
+                        <button type="submit" className="btn btn-primary">SUBMIT</button>
                     </form>
                     </div>
                 </Col>
@@ -47,7 +47,7 @@ return (
             </Row>
             <Row>
              <br/>
-                <div class="copyright">&copy; Mauer Software: <a href="/home">HTML Design</a>.</div>
+                <div className="copyright">&copy; Mauer Software: <a href="/home">HTML Design</a>.</div>
 
             </Row>
         </Container>
