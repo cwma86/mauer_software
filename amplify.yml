@@ -3,10 +3,13 @@ frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     preBuild:
+      - ls && pwd
       - cd ./src/mauer_software
+      - ls && pwd
       - yarn install
     build:
       commands:
+        - ls && pwd
         - yarn run build
   artifacts:
     # IMPORTANT - Please verify your build output directory
