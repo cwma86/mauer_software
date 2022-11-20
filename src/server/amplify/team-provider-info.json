@@ -16,10 +16,18 @@
         "messagefunction": {
           "deploymentBucketName": "amplify-server-dev-202435-deployment",
           "s3Key": "amplify-builds/messagefunction-486c374a4a4357347570-build.zip"
+        },
+        "blogpost": {
+          "deploymentBucketName": "amplify-server-dev-202435-deployment",
+          "s3Key": "amplify-builds/blogpost-48796356455a7470686c-build.zip"
         }
       },
       "api": {
-        "messageapi": {}
+        "messageapi": {},
+        "blogpostapi": {}
+      },
+      "storage": {
+        "blogposts": {}
       }
     }
   }

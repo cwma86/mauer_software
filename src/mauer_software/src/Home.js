@@ -7,7 +7,8 @@ const Home = () => {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-      fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
+        // fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
+        fetch("https://phytow91nh.execute-api.us-east-1.amazonaws.com/dev/items")
         .then((res) => res.json())
         .then((data) => setMessage(data));
     }, []);

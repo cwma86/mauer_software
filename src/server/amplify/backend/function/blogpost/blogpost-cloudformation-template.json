@@ -15,26 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "apimessageapiApiName": {
-      "Type": "String",
-      "Default": "apimessageapiApiName"
-    },
-    "apimessageapiApiId": {
-      "Type": "String",
-      "Default": "apimessageapiApiId"
-    },
-    "storageblogpostsName": {
-      "Type": "String",
-      "Default": "storageblogpostsName"
-    },
-    "storageblogpostsArn": {
-      "Type": "String",
-      "Default": "storageblogpostsArn"
-    },
-    "storageblogpostsStreamArn": {
-      "Type": "String",
-      "Default": "storageblogpostsStreamArn"
     }
   },
   "Conditions": {
@@ -67,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "messagefunction",
+            "blogpost",
             {
               "Fn::Join": [
                 "",
                 [
-                  "messagefunction",
+                  "blogpost",
                   "-",
                   {
                     "Ref": "env"
@@ -89,21 +69,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "API_MESSAGEAPI_APINAME": {
-              "Ref": "apimessageapiApiName"
-            },
-            "API_MESSAGEAPI_APIID": {
-              "Ref": "apimessageapiApiId"
-            },
-            "STORAGE_BLOGPOSTS_NAME": {
-              "Ref": "storageblogpostsName"
-            },
-            "STORAGE_BLOGPOSTS_ARN": {
-              "Ref": "storageblogpostsArn"
-            },
-            "STORAGE_BLOGPOSTS_STREAMARN": {
-              "Ref": "storageblogpostsStreamArn"
             }
           }
         },
@@ -124,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "serverLambdaRole054fc301",
+            "serverLambdaRole02c856df",
             {
               "Fn::Join": [
                 "",
                 [
-                  "serverLambdaRole054fc301",
+                  "serverLambdaRole02c856df",
                   "-",
                   {
                     "Ref": "env"
