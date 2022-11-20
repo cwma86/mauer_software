@@ -8,9 +8,11 @@ const Home = () => {
 
     // TODO new api
     // fetch("https://phytow91nh.execute-api.us-east-1.amazonaws.com/dev/items")
+    // TODO old api 
+    // fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
 
     useEffect(() => {
-        fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
+        fetch("https://phytow91nh.execute-api.us-east-1.amazonaws.com/dev/items")
         .then((res) => res.json())
         .then((data) => setMessage(data));
     }, []);
