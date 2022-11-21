@@ -15,7 +15,7 @@
       "function": {
         "blogPosts": {
           "deploymentBucketName": "amplify-mauersoftware-dev-191454-deployment",
-          "s3Key": "amplify-builds/blogPosts-7774475768326957714b-build.zip"
+          "s3Key": "amplify-builds/blogPosts-6e4f32384b4b4c5a394a-build.zip"
         }
       },
       "storage": {

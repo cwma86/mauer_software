@@ -9,7 +9,7 @@ const Home = () => {
     useEffect(() => {
         fetch("https://dncd6is23m.execute-api.us-east-1.amazonaws.com/dev/blogPosts/1")
         .then((res) => res.json())
-        .then((data) => setMessage(data[0]));
+        .then((data) => setMessage(data));
     }, []);
 
     return (
