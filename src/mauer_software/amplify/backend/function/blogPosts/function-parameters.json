@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "storage": {
+      "blogPostsDb": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

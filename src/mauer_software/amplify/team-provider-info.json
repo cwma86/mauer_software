@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mauersoftware-dev-191454-authRole",
+      "UnauthRoleArn": "arn:aws:iam::874160460776:role/amplify-mauersoftware-dev-191454-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::874160460776:role/amplify-mauersoftware-dev-191454-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mauersoftware-dev-191454-deployment",
+      "UnauthRoleName": "amplify-mauersoftware-dev-191454-unauthRole",
+      "StackName": "amplify-mauersoftware-dev-191454",
+      "StackId": "arn:aws:cloudformation:us-east-1:874160460776:stack/amplify-mauersoftware-dev-191454/4b82e160-6942-11ed-a3a0-1204983a3e5b",
+      "AmplifyAppId": "d2jdii5qb5g9wb"
+    },
+    "categories": {
+      "function": {
+        "blogPosts": {
+          "deploymentBucketName": "amplify-mauersoftware-dev-191454-deployment",
+          "s3Key": "amplify-builds/blogPosts-7774475768326957714b-build.zip"
+        }
+      },
+      "storage": {
+        "blogPostsDb": {}
+      },
+      "api": {
+        "blogPostsApi": {}
+      }
+    }
+  }
+}

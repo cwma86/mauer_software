@@ -1,0 +1,14 @@
+{
+  "resourceName": "blogPostsDb",
+  "tableName": "blogPostsDb",
+  "partitionKey": {
+    "fieldName": "postId",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "date",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

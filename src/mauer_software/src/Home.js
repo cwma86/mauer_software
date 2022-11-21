@@ -6,13 +6,8 @@ const Home = () => {
 
     const [message, setMessage] = useState("");
 
-    // TODO new api
-    // fetch("https://phytow91nh.execute-api.us-east-1.amazonaws.com/dev/items")
-    // TODO old api 
-    // fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
-
     useEffect(() => {
-        fetch("https://p3hosnbd20.execute-api.us-east-1.amazonaws.com/dev/items/1")
+        fetch("https://dncd6is23m.execute-api.us-east-1.amazonaws.com/dev/blogPosts/1")
         .then((res) => res.json())
         .then((data) => setMessage(data[0]));
     }, []);
@@ -22,9 +17,9 @@ const Home = () => {
         <Col xs="2">
             <Row><b>Blog Posts</b></Row>
             
-            <Row>{message.Title}</Row>
+            <Row>{message.blogTitle}</Row>
         </Col>
-        <Col>{message.contents}</Col>
+        <Col>{message.blogContents}</Col>
     </>
 );
 };

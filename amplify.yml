@@ -1,0 +1,25 @@
+version: 1
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    preBuild:
+      commands:
+        - ls
+        - cd ./src/mauer_software
+        - ls
+        - npm --version
+        - npm install
+    build:
+      commands:
+        - ls 
+        - npm run build
+        - ls
+        - pwd
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: ./src/mauer_software/build/
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
