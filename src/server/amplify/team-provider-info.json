@@ -19,12 +19,14 @@
         },
         "blogpost": {
           "deploymentBucketName": "amplify-server-dev-202435-deployment",
-          "s3Key": "amplify-builds/blogpost-48796356455a7470686c-build.zip"
-        }
+          "s3Key": "amplify-builds/blogpost-504e3044735876324d36-build.zip"
+        },
+        "newblogpost": {}
       },
       "api": {
         "messageapi": {},
-        "blogpostapi": {}
+        "blogpostapi": {},
+        "server": {}
       },
       "storage": {
         "blogposts": {}
