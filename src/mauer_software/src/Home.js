@@ -9,12 +9,12 @@ const Home = () => {
     // TODO new api
     // fetch("https://phytow91nh.execute-api.us-east-1.amazonaws.com/dev/items")
     // TODO old api 
-    // fetch("")
+    // fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
 
     useEffect(() => {
-        fetch("https://f7ajat2e0d.execute-api.us-east-1.amazonaws.com/dev/message/items")
+        fetch("https://p3hosnbd20.execute-api.us-east-1.amazonaws.com/dev/items/1")
         .then((res) => res.json())
-        .then((data) => setMessage(data));
+        .then((data) => setMessage(data[0]));
     }, []);
 
     return (
@@ -22,7 +22,7 @@ const Home = () => {
         <Col xs="2">
             <Row><b>Blog Posts</b></Row>
             
-            <Row>{message.title}</Row>
+            <Row>{message.Title}</Row>
         </Col>
         <Col>{message.contents}</Col>
     </>
